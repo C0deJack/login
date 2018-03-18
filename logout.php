@@ -1,5 +1,7 @@
 <?php
-session_abort();
+session_start();
+$_SESSION = [];
+session_destroy();
 ?>
 
 <h2>You have safely logged out</h2>
